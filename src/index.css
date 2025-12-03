@@ -1,0 +1,27 @@
+   :root {
+       --primary: #1a0099;
+       --border: #e0e0e0;
+       --sidebar-width: 310px;
+       --bg-light: #e6f0ff;
+       --text-dark: #222;
+        --text-light-blue: rgba(218, 229, 245, 1)
+   }
+
+   * {
+       margin: 0;
+       padding: 0;
+       box-sizing: border-box;
+       font-family: "Segoe UI", Arial, sans-serif;
+    }
+    
+    a {
+        text-decoration: none;
+        color: black;
+   }
+
+    .d-none{
+    display: none;
+  }
+  .d-block{
+    display: block;
+  }

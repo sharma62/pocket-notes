@@ -1,0 +1,35 @@
+.noteCard {
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    padding: 20px 20px 0px 10px;
+    color: black;
+    display: flex;
+    box-shadow: 20px;
+    flex-direction: column;
+    width: 1000px;
+}
+
+.main p {
+    word-wrap: break-word;
+    color: #080707;
+    line-height: 1.5;
+    text-align: justify;
+}
+
+.noteCard .date_time {
+    text-transform: uppercase;
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    padding: 0px 10px 0px 10px;
+    font-weight: 500;
+    gap: 20px;
+    align-items: baseline;
+}
+
+@media (max-width:900px) {
+    .noteCard {
+        width: 70%;
+    }
+
+}

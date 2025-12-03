@@ -1,0 +1,89 @@
+/* ========== RESPONSIVE DESIGN ========== */
+
+/* 💻 Tablets and Small Laptops */
+@media (max-width: 1024px) {
+  .noteCard {
+    width: 95%;
+  }
+
+  .sidebar h2 {
+    font-size: 22px;
+  }
+  .notes{
+    display: block;
+  }
+}
+
+
+/*  Tablets (Portrait) */
+@media (max-width: 768px) {
+  .pocket {
+    flex-direction: column;
+  }
+
+  .sidebar {
+    display: block;
+    align-items: center;
+    border-right: none;
+    border-bottom: 2px solid #2196f3;
+    width: 100%;
+    padding: 15px;
+  }
+
+  .noteCardContainer {
+    margin: 10px 0;
+  }
+
+  
+  /*  Hide main content on small devices */
+   /* .main,
+  .mainContext {
+    display: none;
+  }  */
+ 
+
+  .noteCard {
+    width: 100%;
+    margin: 10px auto;
+  }
+
+  .model-content {
+    width: 90%;
+  }
+}
+
+/*  Mobile Devices */
+@media (max-width: 570px) {
+
+  
+  .sidebar h2 {
+    font-size: 18px;
+  }
+
+  .noteHeader {
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: center;
+  }
+
+  .noteCard {
+    width: 100%;
+    padding: 15px;
+  }
+
+  .content-area form {
+    width: 100%;
+  }
+
+  input[type="radio"] {
+    width: 25px;
+    height: 25px;
+  }
+
+  /* Again ensure hiding main content */
+  .main,
+  .mainContext {
+    display: block;
+  }
+ 
+}

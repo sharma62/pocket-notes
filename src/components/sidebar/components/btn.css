@@ -1,0 +1,147 @@
+.add-btn {
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  background-color: #1a009c;
+  color: white;
+  border: none;
+  font-size: 30px;
+  cursor: pointer;
+  align-self: center;
+  transition: 0.3s;
+  position: fixed;
+  bottom: 20px;
+  left: 230px;
+}
+
+/*  Modal Overlay */
+.model {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0,.6);
+  /* dim background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+  opacity: 1;
+}
+
+.model-content {
+   /* solid white background */
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 5px 25px rgba(0, 0, 0,1);
+  z-index: 990;
+
+  background: rgba(255, 255, 255);
+  padding: 25px;
+  border-radius: 10px;
+  width: 500px;
+  left: 550px;
+  position: absolute;
+  animation: scaleIn 0.3s ease;
+  cursor: pointer;
+ }
+
+@keyframes scaleIn {
+  from {
+    transform: scale(0.9);
+    opacity: 0;
+  }
+
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.closeBtn {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 24px;
+  color: #555;
+  cursor: pointer;
+}
+
+.closeBtn:hover {
+  color: red;
+}
+
+.content-area h3 {
+  margin-bottom: 15px;
+} 
+
+.content-area > form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;  
+  
+}
+
+.content-area input[type="text"] {
+ width:300px ;
+ padding: 10px;
+ margin-left: 10px;
+ border-radius: 5px;
+}
+
+.color-section {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+.color-options {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.color-circle {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+  border: 2px solid transparent;
+}
+
+.color-circle:hover {
+  transform: scale(1.1);
+}
+
+.color-circle.selected {
+  border: 2px solid black;
+}
+
+.submit {
+  align-self: flex-end;
+  background-color: navy;
+  color: white;
+  border: none;
+  padding: 5px 15px;
+  font-size: 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+
+}
+
+@media (max-width: 1200px) {
+
+  .add-btn {
+    left: 240px;
+  }
+}
+
+@media (max-width: 900px) {
+
+  .add-btn {
+    left: 220px;
+  }
+}

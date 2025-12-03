@@ -1,0 +1,62 @@
+ /* Basic reset */
+
+
+ .pocket {
+     display: flex;
+     height: 100vh;
+ }
+
+ /* Sidebar */
+ .sidebar {
+     background-color: #fff;
+     border-right: 2px solid #2196f3;
+     display: flex;
+     flex-direction: column;
+     justify-content: start;
+     padding: 25px 0px 25px 25px;
+     min-width: 300px;
+     max-width: 350px;
+     gap: 5px;
+     overflow-y: scroll;
+ }
+
+ .sidebar .title {
+     height: 100px;
+ }
+
+
+ .sidebar h2 {
+     text-align: center;
+     font-size: 25px;
+     font-weight: 700;
+     position: sticky;
+     top: 50px;
+     left: 100px;
+     background: white;
+ }
+
+
+
+
+ .note-list {
+     display: flex;
+ }
+
+ /* Responsive */
+ @media (max-width: 900px) {
+     .pocket {
+         flex-direction: column;
+     }
+
+     .sidebar {
+         flex-direction: column;
+         align-items: center;
+         justify-content: start;
+         border-right: none;
+         border-bottom: 2px solid #2196f3;
+         min-width: 100%;
+         max-width: 100%;
+     }
+
+
+ }

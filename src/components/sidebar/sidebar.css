@@ -1,0 +1,137 @@
+.notes {
+  width: 100%;
+  overflow-y: auto;
+  scrollbar-width: thin;
+}
+
+/* Section title */
+.notes div>h2 {
+  display: flex;
+  flex-direction: column;
+  height: 120px;
+  font-size: 1.55rem;
+  font-weight: 500;
+  color: var(--text-dark);
+  padding-bottom: 20px;
+}
+
+/* Each note row */
+.note-list {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 10px 15px;
+  border-radius: 12px;
+  transition: background 0.3s ease, transform 0.2s ease;
+  cursor: pointer;
+ }
+
+/* Hover effect */
+.note-list:hover {
+  background-color: var(--bg-light);
+  transform: scale(1)
+}
+
+/*  Icon bubble (consistent size) */
+.note-list .icon {
+  width: 45px;
+  height: 45px;
+  min-width: 45px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  /* text */
+  color: #fff;
+  font-weight: 600;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+
+  /* smooth animation */
+  transition: transform 0.25s ease;
+}
+/* active list  */
+.activeList {
+  color: #222;
+  font-weight: 700;
+  background-color: var(--bg-light);
+  transform: scale(1)
+}
+
+/*  Adjust font size slightly if text has 2 characters */
+.note-list .icon.double {
+  font-size: 1rem;
+  letter-spacing: 0.3px;
+}
+
+/* Hover bounce */
+.note-list:hover .icon {
+  transform: scale(1.08);
+}
+
+/* Group name text */
+.note-list .list {
+  text-transform: capitalize;
+  font-weight: 500;
+  font-size: 1rem;
+  color: var(--text-dark);
+}
+
+/* Auto color variants */
+.color-coral-red {
+  background-color: #ff6b6b;
+}
+
+.color-teal-green {
+  background-color: #4ecdc4;
+}
+
+.color-sunny-yellow {
+  background-color: #ffd93d;
+  color: #222;
+}
+
+.color-deep-sea-blue {
+  background-color: #1a535c;
+}
+
+.color-violet-blue {
+  background-color: #5c33f6;
+}
+
+.color-rose-pink {
+  background-color: #e56b6f;
+}
+.bg-active{
+  background-color: #aaa8a8;
+}
+
+/* Responsive tweak */
+@media (max-width: 1024px) {
+  .note-list .icon {
+    width: 44px;
+    height: 44px;
+    font-size: 1rem;
+  }
+
+  .note-list .list {
+    font-size: 0.95rem;
+  }
+  .add-btn{
+    left: 20% ;
+  }
+
+
+}
+  @media (max-width:786px){
+    .add-btn{
+     left: 85%;
+     }
+  }
+  @media (max-width:576px){
+    .notes{
+    height: 100vh;
+  }
+  }

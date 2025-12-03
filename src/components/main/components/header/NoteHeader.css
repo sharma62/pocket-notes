@@ -1,0 +1,40 @@
+    .noteHeader {
+        background-color: rgba(0, 31, 139, 1);
+        width: 100%;
+        height: 70px;
+        display: flex;
+        justify-content: start;
+        gap: 15px;
+        padding: 10px 0px 10px 20px;
+        align-items: baseline;
+        text-transform: capitalize;
+    }
+
+    .noteHeader .icon {
+        border: 1px solid ghostwhite;
+        padding: 10px;
+        border-radius: 25px;
+    }
+
+    .icon {
+        width: 45px;
+        height: 45px;
+        min-width: 45px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        color: #fff;
+        font-weight: 600;
+        font-size: 1.2rem;
+        text-transform: uppercase;
+        letter-spacing: 0.5px;
+        transition: transform 0.25s ease;
+    }
+
+    @media (min-width:900px) {
+        .headerImg{
+            display: none;
+        }
+    }

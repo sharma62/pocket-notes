@@ -1,0 +1,33 @@
+    .commentBox {
+        padding:15px;
+        width: 100%;
+        background-color: navy;
+        
+    }
+
+    .commentBox input {
+        border-radius: 10px;
+        
+        width: 100%;
+        height: 7rem;
+        font-size: large;
+        padding: 10px;
+
+    }
+    input::placeholder{
+    position: absolute;
+    top: 12px;
+    
+    }
+    .send-icon{
+        position: relative;
+    }
+    .send-icon i {
+        position: absolute;
+        right: 40px;
+        top: -50px;
+        font-size: x-large;
+        cursor: pointer;
+    }
+
+   

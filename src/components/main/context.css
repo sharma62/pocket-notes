@@ -1,0 +1,72 @@
+/* Main section */
+.main {
+    flex: 3;
+    background-color: #e6f0ff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0;
+    height: 100vh;
+    /*  Important: set full height for proper scroll */
+    overflow: hidden;
+    /* prevent double scroll */
+}
+
+.main-content {
+    width: 100%;
+     display: flex;
+    flex-direction: column;
+     /*  changed from center to start */
+    align-items: center;
+    justify-content: center;
+    overflow-y: auto;
+    /*  'auto' works better than 'scroll' */
+    padding: 10px;
+    scrollbar-width: thin;
+    /* for Firefox */
+    height: 100%;
+    /*  make sure it fills remaining height */
+}
+
+/* Optional: Custom scrollbar style */
+.main-content::-webkit-scrollbar {
+    width: 8px;
+}
+
+.main-content::-webkit-scrollbar-thumb {
+    background-color: #a0b8e6;
+    border-radius: 5px;
+}
+
+.noteCardContainer {
+    margin-bottom: 10px;
+    width: 100%;
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+}
+
+.main-img {
+    width: 50%;
+    max-width: 100%;
+}
+
+.main h1 {
+    margin-top: 25px;
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.footer {
+    font-size: 14px;
+    color: #444;
+    margin-bottom: 15px;
+}
+
+@media (max-width:900px) {
+  
+}
